@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+
+const BasicTitle = styled.h1`
+	text-align: center;
+	text-transform: capitalize;
+`;
+
+const DefaultButton = styled.button`
+	background: #645cff;
+	color: #fff;
+	border: none;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	text-transform: capitalize;
+	padding: 0.25rem;
+	display: block;
+	width: 200px;
+	margin: 1rem auto;
+`;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div style={{ padding: '2rem' }}>
+			<BasicTitle>Styled Component</BasicTitle>
+			<DefaultButton>Make penis bigger</DefaultButton>
+		</div>
+	);
 }
 
 export default App;
