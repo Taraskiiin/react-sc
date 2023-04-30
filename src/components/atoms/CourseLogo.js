@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
 
-const CourseLogoStyled = styled.td`
+const CourseLogoStyled = styled.div`
 	background: #ffffff;
 	border-radius: 12px;
 	width: 64px;

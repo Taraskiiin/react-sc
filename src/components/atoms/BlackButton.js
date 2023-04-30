@@ -13,6 +13,7 @@ const BlackButtonStyled = styled.button`
 	line-height: 15px;
 	color: #ffffff;
 	border: none;
+	white-space: nowrap;
 `;
 
 export default function BlackButton({ label, click }) {

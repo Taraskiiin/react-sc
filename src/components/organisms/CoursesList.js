@@ -1,3 +1,4 @@
+import FilterItem from '../atoms/FilterItem';
 import DefaultTitle from '../atoms/DefaultTitle';
 import CoursesListItem from '../molecules/CoursesListItem';
 import styled from 'styled-components';
@@ -68,18 +69,37 @@ const filter = [
 	{ id: '4', label: 'Most Popular' },
 ];
 
+const FilterStyled = styled.div`
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	max-width: min-content;
+	gap: 32px;
+	margin: 16px 0 10px 0;
+`;
+
 export default function CoursesList() {
 	const [sortBy, setSortBy] = useState('All Courses');
+
+	const handleSelectSortBy = (label) => {
+		if (sortBy !== label) {
+			setSortBy(label);
+		}
+	};
 
 	return (
 		<>
 			<DefaultTitle label='Courses' />
-			<div>
+			<FilterStyled>
 				{filter.map((el) => (
-					<h3></h3>
+					<FilterItem
+						key={el.id}
+						label={el.label}
+						selected={sortBy}
+						onClick={() => handleSelectSortBy(el.label)}
+					/>
 				))}
-			</div>
-			<table>
+			</FilterStyled>
+			<div>
 				{coursesList.map((el) => (
 					<CoursesListItem
 						logo={el.logo}
@@ -90,7 +110,7 @@ export default function CoursesList() {
 						key={el.id}
 					/>
 				))}
-			</table>
+			</div>
 		</>
 	);
 }

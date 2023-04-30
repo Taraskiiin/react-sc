@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
 
-const RatingItemStyled = styled.td`
+const RatingItemStyled = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 8px;
@@ -11,7 +11,6 @@ const RatingItemStyled = styled.td`
 	font-size: 13px;
 	line-height: 15px;
 	color: #000000;
-	padding: 0 5px 0 5px;
 `;
 
 export default function RatingItem({ rating }) {

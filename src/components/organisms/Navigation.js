@@ -35,7 +35,6 @@ const NavigationStyled = styled.div`
 	background: #000000;
 	border-radius: 24px;
 	width: 132px;
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

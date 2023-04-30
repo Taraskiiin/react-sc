@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
 
-const DurationItemStyled = styled.td`
+const DurationItemStyled = styled.div`
 	display: flex;
 	gap: 8px;
 	align-items: center;
@@ -13,7 +13,6 @@ const DurationItemStyled = styled.td`
 	color: #000000;
 	width: 96px;
 	text-overflow: ellipsis;
-	padding: 0 5px 0 3px;
 `;
 
 export default function DurationItem({ hours, minutes }) {
