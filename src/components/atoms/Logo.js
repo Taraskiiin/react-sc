@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React from 'react';
 
 const LogoStyled = styled.h2`
-	font-family: 'Baloo Bhai';
+	font-family: 'BalooBhai';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 64px;
