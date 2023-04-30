@@ -1,29 +1,15 @@
+import Navigation from './components/organisms/Navigation';
 import styled from 'styled-components';
 
-const BasicTitle = styled.h1`
-	text-align: center;
-	text-transform: capitalize;
-`;
-
-const DefaultButton = styled.button`
-	background: #645cff;
-	color: #fff;
-	border: none;
-	border-radius: 0.25rem;
-	cursor: pointer;
-	text-transform: capitalize;
-	padding: 0.25rem;
-	display: block;
-	width: 200px;
-	margin: 1rem auto;
+const AppStyled = styled.div`
+	padding: 24px 32px;
 `;
 
 function App() {
 	return (
-		<div style={{ padding: '2rem' }}>
-			<BasicTitle>Styled Component</BasicTitle>
-			<DefaultButton>Make penis bigger</DefaultButton>
-		</div>
+		<AppStyled>
+			<Navigation />
+		</AppStyled>
 	);
 }
 
