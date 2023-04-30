@@ -5,27 +5,27 @@ import React from 'react';
 
 const navigations = [
 	{
-		id: 1,
+		id: '1',
 		href: '#',
 		icon: '/assets/icons/home-icon.svg',
 	},
 	{
-		id: 2,
+		id: '2',
 		href: '#',
 		icon: '/assets/icons/study-icon.svg',
 	},
 	{
-		id: 3,
+		id: '3',
 		href: '#',
 		icon: '/assets/icons/user-icon.svg',
 	},
 	{
-		id: 4,
+		id: '4',
 		href: '#',
 		icon: '/assets/icons/email-icon.svg',
 	},
 	{
-		id: 5,
+		id: '5',
 		href: '#',
 		icon: '/assets/icons/settings-icon.svg',
 	},
