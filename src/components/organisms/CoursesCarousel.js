@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper';
+import styled from 'styled-components';
 import React from 'react';
 
 const carouselList = [
@@ -22,9 +23,44 @@ const carouselList = [
 	},
 ];
 
+const CoursesCarouselStyled = styled.div`
+	margin-top: 24px;
+	margin-bottom: 39px;
+
+	.swiper {
+		& > .swiper-button-prev,
+		& > .swiper-button-next {
+			width: 40px;
+			height: 40px;
+			border: 2px solid #000000;
+			border-radius: 100px;
+			right: 0;
+
+			&::after {
+				content: '' !important;
+				background: url('/assets/icons/next-icon.svg');
+				background-repeat: no-repeat !important;
+				background-position: center;
+				position: absolute;
+				height: 12px;
+				width: 15px;
+				z-index: 10;
+			}
+		}
+
+		& > .swiper-button-prev {
+			left: calc(100% - 105px) !important;
+
+			&::after {
+				background: url('/assets/icons/prev-icon.svg');
+			}
+		}
+	}
+`;
+
 export default function CoursesCarousel() {
 	return (
-		<div>
+		<CoursesCarouselStyled>
 			<Swiper navigation={true} modules={[Navigation]} className='mySwiper'>
 				{carouselList.map((el) => (
 					<SwiperSlide>
@@ -38,6 +74,6 @@ export default function CoursesCarousel() {
 					</SwiperSlide>
 				))}
 			</Swiper>
-		</div>
+		</CoursesCarouselStyled>
 	);
 }
