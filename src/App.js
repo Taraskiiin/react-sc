@@ -1,6 +1,4 @@
-import Banner from './components/atoms/Banner';
-import CoursesCarousel from './components/organisms/CoursesCarousel';
-import CoursesList from './components/organisms/CoursesList';
+import LeftPart from './components/templates/LeftPart';
 import Navigation from './components/organisms/Navigation';
 import styled from 'styled-components';
 
@@ -11,9 +9,15 @@ const AppStyled = styled.div`
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 
-	.left-part {
-		padding-top: 24px;
-		max-width: 620px;
+	@media (max-width: 1440px) {
+		max-width: 1024px;
+		grid-template-columns: repeat(1, 620px);
+		padding: 16px;
+		justify-content: center;
+	}
+
+	@media (max-width: 1024px) {
+		padding: 0;
 	}
 `;
 
@@ -21,11 +25,7 @@ function App() {
 	return (
 		<AppStyled>
 			<Navigation />
-			<div className='left-part'>
-				<Banner />
-				<CoursesCarousel />
-				<CoursesList />
-			</div>
+			<LeftPart />
 		</AppStyled>
 	);
 }

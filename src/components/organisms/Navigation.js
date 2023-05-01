@@ -48,9 +48,32 @@ const NavigationStyled = styled.div`
 		gap: 64px;
 
 		& > a {
-			text-decoration: none;'
+			text-decoration: none;
 		}
 	}
+
+	@media (max-width: 1440px) {
+		position: fixed;
+		z-index: 100;
+		top: 16px;
+		margin: 0 auto;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0;
+		width: 1024px;
+		height: 80px;
+
+		& > nav {
+		flex-direction: row;
+		gap: 32px;
+	}
+
+	@media (max-width: 1024px) {
+		width: 100%;
+		border-radius: 0;
+		margin: 0;
+		top: 0;
 `;
 
 export default function Navigation() {
