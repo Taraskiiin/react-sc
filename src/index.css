@@ -16,6 +16,10 @@
 		url(./fonts/BalooBhai/BalooBhai-Regular.ttf) format('truetype');
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Roboto';
 	margin: 0;

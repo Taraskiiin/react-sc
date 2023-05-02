@@ -14,11 +14,11 @@ const progressBannersContent = [
 ];
 
 const ProgressBannersBlockStyled = styled.div`
-	width: 100%;
+	max-width: 100%;
 	margin-top: 24px;
 	display: grid;
 	gap: 24px;
-	grid-template-columns: 200px 200px;
+	grid-template-columns: 1fr 1fr;
 	justify-content: space-between;
 `;
 

@@ -1,3 +1,4 @@
+import SmallBanner from '../atoms/SmallBanner';
 import TopPanelRightBlock from '../molecules/TopPanelRightBlock';
 import ProgressBannersBlock from '../molecules/ProgressBannersBlock';
 import styled from 'styled-components';
@@ -14,11 +15,20 @@ const RightPartStyled = styled.div`
 	}
 `;
 
+const smallBannerContent = {
+	title: 'Lern even more!',
+	content: 'Unlock premium features only for $9.99 per month.',
+};
+
 export default function RightPart() {
 	return (
 		<RightPartStyled>
 			<TopPanelRightBlock />
 			<ProgressBannersBlock />
+			<SmallBanner
+				title={smallBannerContent.title}
+				content={smallBannerContent.content}
+			/>
 		</RightPartStyled>
 	);
 }
