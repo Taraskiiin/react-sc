@@ -1,3 +1,4 @@
+import TopPanelRightBlock from '../molecules/TopPanelRightBlock';
 import Banner from '../atoms/Banner';
 import CoursesCarousel from '../organisms/CoursesCarousel';
 import CoursesList from '../organisms/CoursesList';
