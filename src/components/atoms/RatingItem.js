@@ -16,7 +16,7 @@ const RatingItemStyled = styled.div`
 export default function RatingItem({ rating }) {
 	return (
 		<RatingItemStyled>
-			<img alt='fire icon' src={'/assets/icons/black-fire.svg'} />
+			<img alt='fire icon' src={'assets/icons/black-fire.svg'} />
 			<span>{rating}</span>
 		</RatingItemStyled>
 	);

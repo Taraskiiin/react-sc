@@ -22,12 +22,12 @@ export default function ProfileButton({ photo }) {
 			<img
 				className='user-photo'
 				alt='user photo'
-				src={photo ? photo : '/assets/incognito-user-illustration.png'}
+				src={photo ? photo : 'assets/incognito-user-illustration.png'}
 			/>
 			<img
 				className='open-icon'
 				alt='open icon'
-				src='/assets/icons/down-black-small.svg'
+				src='assets/icons/down-black-small.svg'
 			/>
 		</ProfileButtonStyled>
 	);

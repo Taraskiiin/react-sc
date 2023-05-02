@@ -52,7 +52,7 @@ export default function SmallBanner({ title, content }) {
 				label={'Go Premium'}
 				click={() => console.log('Go Premium')}
 			/>
-			<img alt='book illustration' src='/assets/book-illustration.png' />
+			<img alt='book illustration' src='assets/book-illustration.png' />
 		</SmallBannerStyled>
 	);
 }

@@ -8,7 +8,7 @@ const LogoutBtnStyled = styled.div`
 export default function LogoutBtn() {
 	return (
 		<LogoutBtnStyled>
-			<img alt='logout icon' src='/assets/icons/logout-icon.svg' />
+			<img alt='logout icon' src='assets/icons/logout-icon.svg' />
 		</LogoutBtnStyled>
 	);
 }

@@ -4,7 +4,7 @@ import React from 'react';
 const NotificationsStyled = styled.div`
 	width: 24px;
 	height: 26px;
-	background-image: url('/assets/icons/notification-icon.svg');
+	background-image: url('assets/icons/notification-icon.svg');
 	position: relative;
 `;
 

@@ -25,7 +25,7 @@ const SearchFieldStyled = styled.div`
 			left: 14px;
 			width: 20px;
 			height: 20px;
-			background-image: url('/assets/icons/search-icon.svg');
+			background-image: url('assets/icons/search-icon.svg');
 			z-index: 20;
 		}
 

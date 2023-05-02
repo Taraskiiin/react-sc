@@ -53,10 +53,7 @@ export default function BigBanner() {
 				<h1>{bannerContent.title}</h1>
 				<p>{bannerContent.content}</p>
 			</div>
-			<img
-				alt='student Josh illustration'
-				src='/assets/josh-Illustration.png'
-			/>
+			<img alt='student Josh illustration' src='assets/josh-Illustration.png' />
 		</BigBannerStyled>
 	);
 }

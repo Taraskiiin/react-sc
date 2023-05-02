@@ -18,7 +18,7 @@ const DurationItemStyled = styled.div`
 export default function DurationItem({ hours, minutes }) {
 	return (
 		<DurationItemStyled>
-			<img alt='clock icon' src='/assets/icons/black-clock.svg' />
+			<img alt='clock icon' src='assets/icons/black-clock.svg' />
 			<span>{hours}h</span>
 			<span>{minutes}min</span>
 		</DurationItemStyled>

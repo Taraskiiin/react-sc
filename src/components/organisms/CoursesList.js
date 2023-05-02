@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 const coursesList = [
 	{
 		id: '1',
-		logo: '/assets/course-logo/figma-logo.svg',
+		logo: 'assets/course-logo/figma-logo.svg',
 		title: 'Learn Figma',
 		author: 'by Christopher Morgan',
 		duration: {
@@ -18,7 +18,7 @@ const coursesList = [
 	},
 	{
 		id: '2',
-		logo: '/assets/course-logo/camera-lens-logo.svg',
+		logo: 'assets/course-logo/camera-lens-logo.svg',
 		title: 'Analog photography',
 		author: 'by Gordon Norman',
 		duration: {
@@ -29,7 +29,7 @@ const coursesList = [
 	},
 	{
 		id: '3',
-		logo: '/assets/course-logo/instagram-logo.svg',
+		logo: 'assets/course-logo/instagram-logo.svg',
 		title: 'Master Instagram',
 		author: 'by Sophie Gill',
 		duration: {
@@ -40,7 +40,7 @@ const coursesList = [
 	},
 	{
 		id: '4',
-		logo: '/assets/course-logo/pencil-logo.svg',
+		logo: 'assets/course-logo/pencil-logo.svg',
 		title: 'Basics of drawing',
 		author: 'by Jean Tate',
 		duration: {
@@ -51,7 +51,7 @@ const coursesList = [
 	},
 	{
 		id: '5',
-		logo: '/assets/course-logo/photoshop-logo.svg',
+		logo: 'assets/course-logo/photoshop-logo.svg',
 		title: 'Photoshop - Essence',
 		author: 'by David Green',
 		duration: {

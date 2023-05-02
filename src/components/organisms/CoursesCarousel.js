@@ -9,14 +9,14 @@ import React from 'react';
 const carouselList = [
 	{
 		id: '1',
-		logo: '/assets/course-logo/spanish-logo.svg',
+		logo: 'assets/course-logo/spanish-logo.svg',
 		title: 'Spanish B2',
 		author: 'by Alejandro Velazquez',
 		progress: '83',
 	},
 	{
 		id: '2',
-		logo: '/assets/course-logo/instagram-logo.svg',
+		logo: 'assets/course-logo/instagram-logo.svg',
 		title: 'Master Instagram',
 		author: 'by Sophie Gill',
 		progress: '46',
@@ -38,7 +38,7 @@ const CoursesCarouselStyled = styled.div`
 
 			&::after {
 				content: '' !important;
-				background: url('/assets/icons/next-icon.svg');
+				background: url('assets/icons/next-icon.svg');
 				background-repeat: no-repeat !important;
 				background-position: center;
 				position: absolute;
@@ -52,7 +52,7 @@ const CoursesCarouselStyled = styled.div`
 			left: calc(100% - 105px) !important;
 
 			&::after {
-				background: url('/assets/icons/prev-icon.svg');
+				background: url('assets/icons/prev-icon.svg');
 			}
 		}
 	}
