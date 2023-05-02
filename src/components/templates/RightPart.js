@@ -1,4 +1,5 @@
 import SmallBanner from '../atoms/SmallBanner';
+import Chart from '../atoms/Chart';
 import TopPanelRightBlock from '../molecules/TopPanelRightBlock';
 import ProgressBannersBlock from '../molecules/ProgressBannersBlock';
 import styled from 'styled-components';
@@ -25,6 +26,7 @@ export default function RightPart() {
 		<RightPartStyled>
 			<TopPanelRightBlock />
 			<ProgressBannersBlock />
+			<Chart />
 			<SmallBanner
 				title={smallBannerContent.title}
 				content={smallBannerContent.content}
