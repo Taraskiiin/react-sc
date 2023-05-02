@@ -41,21 +41,21 @@ export const options = {
 		},
 	},
 	borderWidth: 3,
-	padding: 45,
-	tension: 0.5,
+	tension: 0.6,
 	pointRadius: 5,
+	labels: true,
 };
 
 const labels = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
 export const data = {
-	labels,
+	labels: labels,
 	datasets: [
 		{
 			label: 'Dataset 1',
-			data: [0, 1.5, 2.5, 1, 4, 3, 2],
-			borderColor: false,
+			data: [0, 1.5, 2.5, 1, 5, 3, 2],
 			backgroundColor: '#000',
+			labels: true,
 		},
 	],
 };
