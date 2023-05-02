@@ -6,7 +6,7 @@ const bannerContent = {
 	content: 'It’s good to see you again. ',
 };
 
-const BannerStyled = styled.div`
+const BigBannerStyled = styled.div`
 	box-sizing: border-box;
 	background: #f5f5f7;
 	border-radius: 14px;
@@ -46,9 +46,9 @@ const BannerStyled = styled.div`
 	}
 `;
 
-export default function Banner() {
+export default function BigBanner() {
 	return (
-		<BannerStyled>
+		<BigBannerStyled>
 			<div className='left-part'>
 				<h1>{bannerContent.title}</h1>
 				<p>{bannerContent.content}</p>
@@ -57,6 +57,6 @@ export default function Banner() {
 				alt='student Josh illustration'
 				src='/assets/josh-Illustration.png'
 			/>
-		</BannerStyled>
+		</BigBannerStyled>
 	);
 }

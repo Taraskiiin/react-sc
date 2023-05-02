@@ -7,7 +7,9 @@ const InProgressBannerStyled = styled.div`
 	background: #f5f5f7;
 	border-radius: 14px;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-items: center;
 
 	.number {
 		font-family: 'BalooBhai';
@@ -31,8 +33,8 @@ const InProgressBannerStyled = styled.div`
 export default function InProgressBanner({ number, label }) {
 	return (
 		<InProgressBannerStyled>
-			<span className='number'></span>
-			<span className='label'></span>
+			<span className='number'>{number}</span>
+			<span className='label'>{label}</span>
 		</InProgressBannerStyled>
 	);
 }

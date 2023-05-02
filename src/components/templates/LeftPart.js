@@ -1,5 +1,4 @@
-import TopPanelRightBlock from '../molecules/TopPanelRightBlock';
-import Banner from '../atoms/Banner';
+import BigBanner from '../atoms/BigBanner';
 import CoursesCarousel from '../organisms/CoursesCarousel';
 import CoursesList from '../organisms/CoursesList';
 import styled from 'styled-components';
@@ -18,7 +17,7 @@ const LeftPartStyled = styled.div`
 export default function LeftPart() {
 	return (
 		<LeftPartStyled>
-			<Banner />
+			<BigBanner />
 			<CoursesCarousel />
 			<CoursesList />
 		</LeftPartStyled>

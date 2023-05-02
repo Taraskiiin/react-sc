@@ -10,6 +10,7 @@ const TopPanelRightBlockStyled = styled.div`
 	display: grid;
 	grid-template-columns: 300px 26px 56px;
 	align-items: center;
+	justify-content: space-between;
 	gap: 15px;
 `;
 

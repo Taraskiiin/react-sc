@@ -1,4 +1,5 @@
 import LeftPart from './components/templates/LeftPart';
+import RightPart from './components/templates/RightPart';
 import Navigation from './components/organisms/Navigation';
 import styled from 'styled-components';
 
@@ -7,7 +8,9 @@ const AppStyled = styled.div`
 	margin: 0 auto;
 	padding: 24px 32px;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 132px 620px 440px;
+	gap: 60px;
+	justify-content: center;
 
 	@media (max-width: 1440px) {
 		max-width: 1024px;
@@ -26,6 +29,7 @@ function App() {
 		<AppStyled>
 			<Navigation />
 			<LeftPart />
+			<RightPart />
 		</AppStyled>
 	);
 }
