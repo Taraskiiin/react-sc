@@ -33,6 +33,7 @@ const navigations = [
 
 const NavigationStyled = styled.div`
 	background: #000000;
+	position: relative;
 	border-radius: 24px;
 	width: 132px;
 	display: flex;
@@ -40,6 +41,19 @@ const NavigationStyled = styled.div`
 	align-items: center;
 	gap: 95px;
 	padding: 0 0 40px 0;
+
+	.blur {
+		position: absolute;
+		width: 81.01px;
+		height: 804px;
+		right: 0;
+		top: 0;
+		background: #000000;
+		opacity: 0.7;
+		filter: blur(30px);
+		border-radius: 24px;
+		z-index: -1;
+	}
 
 	& > nav {
 		display: flex;
@@ -64,6 +78,10 @@ const NavigationStyled = styled.div`
 		width: 1024px;
 		height: 80px;
 
+		.blur {
+		display: none;
+	}
+
 		& > nav {
 		flex-direction: row;
 		gap: 32px;
@@ -79,6 +97,7 @@ const NavigationStyled = styled.div`
 export default function Navigation() {
 	return (
 		<NavigationStyled>
+			<div className='blur' />
 			<Logo />
 			<nav>
 				{navigations.map((el) => (
